@@ -1,0 +1,21 @@
+<section>
+  <h2>Book List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Published Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        @for (book of books; track book.id) {
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.publishedYear }}</td>
+        }
+      </tr>
+    </tbody>
+  </table>
+</section>
